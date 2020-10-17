@@ -12,7 +12,12 @@ const UserForm = () => {
     const [city, setCity] = useState("")
     const [bio, setBio] = useState("")
 
-    
+    const nextStep = () => {
+         setStep(step+1)
+    }
+    const prevStep = () => {
+        setStep(step-1)
+   }
     switch(step) {
         case 1:
             return (
